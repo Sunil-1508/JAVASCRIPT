@@ -1,0 +1,33 @@
+<html>
+
+<body>
+    <h2> String Object Methods</h2>
+    <script>
+        let s = "aditya";
+        let a = "engineering ";
+        let b = "college"
+        let c = "";
+        let d = "      AUTONOMOUS   ";
+        document.write("s length=" + s.length + "<br>");
+        document.write("char at 3 in a " + a.charAt(3) + "<br>");
+        document.write("concat a,b is " + a.concat(b) + "<br>");
+        c = a.concat(b);
+        document.write("r  index in a " + a.indexOf("r") + "<br>");
+        document.write("LastIndexOf e in a " + a.lastIndexOf("e") + "<br>");
+        const MyArray = c.split(" ");
+        document.write("a split " + MyArray + "<br>");
+        document.write("d befor trim() length=" + d.length + "<br>");
+        document.write("trim of d " + d.trim() + "<br>");
+        d = d.trim();
+        document.write("s after trim() length=" + d.length + "<br>");
+        document.write("slice of a " + a.slice(4, 8) + "<br>");
+        document.write("substring " + b.substring(2, 5) + "<br>");
+        document.write("substr " + b.substr(2, 5) + "<br>");
+        document.write("toLowerCase " + d.toLowerCase() + "<br>");
+        document.write("toLowerCase " + a.toUpperCase() + "<br>");
+        document.write("replace " + a.replace('e', 'E') + "<br>");
+        document.write("replace " + a.replaceAll('e', 'E'));
+    </script>
+</body>
+
+</html>

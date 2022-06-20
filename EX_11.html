@@ -1,0 +1,82 @@
+<!-- <html>
+    <body>
+        <script>
+            var person={
+                name:"balaji",
+                age:20,
+                rollnnno:"20a91a0582",
+                dept:"CSE",
+                get getter1(){ //demonstration of getter is used to get details
+                    return this.name;
+                },
+                set setter1(age){  //used to set 
+                    this.age=age;
+                },
+                nickname:function(){  //demonstation of function
+                    return "audi";
+                }
+            };
+            document.write(person.getter1);
+            person.setter1=25;
+            //document.write(person.age);
+            function person1(name,age,rollnno,dept){  //constructor
+                this.name=name;
+                this.rollnnno=rollnno;
+                this.age=age;
+                this.dept=dept;
+            }
+            var s1=new person1("ravi",20,"20a91a0b1","cse");  //instatntiation
+            document.write("<h1>DETAILS OF PERSON1</H1>");
+            document.write("<b>name: </b>"+s1.name+"<br>");
+            document.write("<b>age: </b>"+s1.age+"<br>");
+            document.write("<b>rollno: </b>"+s1.rollnnno+"<br>");
+            document.write("<b>dept: </b>"+s1.dept+"<br>");
+            document.write(person.nickname());
+        </script>
+    </body>
+</html> -->
+<html>
+    <body>
+        <script>
+        var person={
+            name:"sunil",
+            age:19,
+            rollno:"20a91a05b1",
+            dept:"CSE",
+            get getter()
+            {
+                return this.name;
+            },
+            set setter(age)
+            {
+             this.age=age;
+            },
+            nickname:function()
+            {
+                return "sunny";
+            }
+            
+        };
+            
+            var a=person.gettter();
+            document.write(a);
+            person.settter(25);
+            document.write(person.age);
+          function person1(name,age,rollno,dept)
+            {
+                this.name=name;
+                this.age=age;
+                this.rollno=rollno;
+                this.dept=dept;
+            }
+        var obj= new person1("raju",30,"20a91a000","CSE");
+            document.write("<h1>DETAILS OF PERSON1</H1>");
+            document.write("<b>name: </b>"+obj.name+"<br>");
+            document.write("<b>age: </b>"+obj.age+"<br>");
+            document.write("<b>rollno: </b>"+obj.rollno+"<br>");
+            document.write("<b>dept: </b>"+obj.dept+"<br>");
+            document.write(person.nickname());
+            
+        </script>
+    </body>
+</html>

@@ -1,0 +1,46 @@
+<html>
+    <body>
+        <h2>print 1-10 numbers using For loop</h2>
+        <script>
+            
+        for(let a=1;a<=10;a++)
+            {
+                document.write(a+" ");
+            }
+        </script>
+        <h2>print 11-20 numbers using while loop</h2>
+        <script>
+            
+        let a=11;
+            while(a<=20)
+            {
+                document.write(a+" ");
+                a+=1;
+            }
+        </script>
+        <h2>print 21-30 numbers using do-While loop</h2>
+        <script>
+            a=21; 
+        do{
+            document.write(a+" "); 
+            a+=1;
+          }while(a<=30)
+        </script>
+        <h2>print wether the given number is armstrong or not</h2>
+        <script>
+        num=window.prompt("enter thr number");
+            let d=parseInt(Math.log10(num)+1);
+            var sum=0;
+            var t=num;
+            while(num>0)
+                {
+                    rem=num%10;
+                    sum=sum+Math.pow(rem,d);
+                    num=parseInt(num/10);
+                }
+            if(sum==t) document.write(t+" is an armstrong number");
+            else document.write(t+" is not an armstrong number");
+        </script>
+        
+    </body>
+</html>

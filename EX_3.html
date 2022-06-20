@@ -1,0 +1,31 @@
+<html>
+
+<head>
+    <title>
+        experiment 3
+    </title>
+</head>
+
+<body>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <h4 id="demo2"></h4>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    <h3>helooooooo</h3>
+    <h3>hiiiiiii</h3>
+    <script>
+        document.getElementById("demo").innerHTML = document.title;
+        document.getElementById("demo1").innerHTML = document.URL;
+        //document.getElementById("demo3").innerHTML=document.cookie;
+        document.open();
+        document.getElementById("demo2").innerHTML = document.domain;
+        document.getElementById("demo4").innerHTML = document.readyState;
+        document.close();
+        document.getElementsByTagName("h3")[0].innerHTML="happy birthday";
+        document.writeln("line 1");
+        document.write("line 2");
+    </script>
+</body>
+
+</html>

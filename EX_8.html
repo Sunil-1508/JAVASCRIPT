@@ -1,0 +1,41 @@
+<html>
+
+<body>
+    <script>
+        num = parseInt(window.prompt("enter the number"));
+        if (num % 2 == 0) document.write("it is even number");
+        if (num % 2 != 0) document.write("it is odd number");
+        
+        document.write("<br>");
+        a = parseInt(window.prompt("enter age"));
+        if (a >= 18) document.write("u r elegible for vote");
+        else document.write("u r not elegible for vote");
+        document.write("<br>");
+        marks = parseInt(window.prompt("enter u r Marks"));
+        if (marks <= 30) document.write("u r FAIL");
+        else if (marks > 30 && marks <= 50) document.write(" 3rd class");
+        else if (marks > 51 && marks <= 80) document.write(" 2nd class");
+        else if (marks > 81 && marks <= 100) document.write(" 1st class");
+        else document.write("Invalid marks");
+        document.write("<br>");
+        x = parseInt(window.prompt("enter the X"));
+        y = parseInt(window.prompt("enter the Y"));
+        z = parseInt(window.prompt("enter the Z"));
+        if(x==y && y==z) document.write("EQUAL NUMBERS ");
+        else if(x>y && x>z)
+            {
+                document.write(x+" is LARGER NUMBER i.e X");
+            }
+        else if(y>z && y>x)
+            {
+               document.write(y+" is LARGER NUMBER i.e Y");   
+            }
+        else{
+               document.write(z+" is LARGER NUMBER i.e Z");   
+            }
+    
+        
+    </script>
+</body>
+
+</html>

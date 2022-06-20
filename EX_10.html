@@ -1,0 +1,58 @@
+<html>
+
+
+
+<body>
+   <h2> Function and Objects </h2>
+    <script>
+        document.write("sum :-");
+        function sum(a,b) 
+        {
+              return a+b;
+        }
+        a = parseInt(window.prompt("enter a "));
+        b = parseInt(window.prompt("enter b "));
+         ans=sum(a,b);
+        document.write(a + "+" + b + "=" + (ans));
+        document.write("<br>");
+        document.write("fibinoci :-");
+        function fib(b) 
+        {
+            if(b==0) return 0;
+            if(b==1) return 1;
+             return fib(b-1)+fib(b-2);
+        }
+        b = parseInt(window.prompt("enter a "));
+        for(var i=0;fib(i)<=b;i++)
+        document.write(fib(i)+" ");
+        document.write("<br>");
+        document.write("is prime :-");
+        function prime(b) 
+        {
+            if(b<=1) return false;
+            if(b==2) return true;
+            for(var i=2;i*i<=b;i++)
+                {
+                    if(b%i==0) return false;
+                }
+            return true;
+        }
+        b = parseInt(window.prompt("enter a number "));
+        if(prime(b)) document.write(b+" is prime");
+        else document.write(b+" is not prime");
+        
+         document.write("<br>");
+        document.write("factorial :-");
+        function fact(b) 
+        {
+            if(b<=1) return 1;
+             return b*fact(b-1);
+        }
+        b = parseInt(window.prompt("enter a number "));
+        ans=fact(b);
+        document.write("factorial of "+b+" is "+ans);
+        
+    </script>
+</body>
+
+</html>
