@@ -1,0 +1,82 @@
+<html>
+
+<body>
+    <center>
+        ENTER A NUMBER <input id="number">
+        <BR><BR><BR>
+        <button onclick="factorial()">factorial</button>
+        <button onclick="fibonnaci()">fibonnaci</button>
+        <button onclick="palindrome()">palindrome</button>
+        <button onclick="prime2()">prime</button>
+        <BR><BR><BR>
+        <script>
+            function factorial() {
+
+                var num = document.getElementById("number").value;
+                var sum = 1;
+                for (var i = 1; i <= num; i++) {
+                    sum = sum * i;
+                }
+                document.getElementById("fact").innerHTML = sum;
+            }
+
+            function fibonnaci() {
+                var num = document.getElementById("number").value;
+                var a = 0,
+                    b = 1;
+                var s = a + b;
+                 const ar=[];
+                ar.push(a);
+                ar.push(b);
+                ar.push(s);
+                while (s <= num) {
+                    a = b;
+                    b = s;
+                    ar.push(s);
+                    s = a + b;
+                   
+                    
+                }
+                document.getElementById("fib").innerHTML = ar;
+            }
+
+            function palindrome() {
+                var num = document.getElementById("number").value;
+                var temp = num;
+                var sum = 0;
+                while (temp != 0) {
+                    var r = temp % 10;
+                    sum = sum * 10 + r;
+                    temp = parseInt(temp / 10);
+                }
+                if (sum == num) {
+                    document.getElementById("palin").innerHTML = "palindeome";
+                } else {
+                    document.getElementById("palin").innerHTML = " not palindeome";
+                }
+
+            }
+                   function prime(b)
+                   {
+                   if(b<=1) return false; if(b==2) return true; for(var i=2;i*i<=b;i++) { if(b%i==0) return false; } return true; }
+            
+            function prime2(){ 
+                const arr=[];
+                 var b = document.getElementById("number").value;
+               for(var i=2;i<=b;i++){ 
+                   if(prime(i)) arr.push(i);
+                  
+               }
+                    document.getElementById("primes").innerHTML = arr;
+               
+
+            }
+        </script>
+        <textarea id="fact" cols="8" rows="2"></textarea>
+        <textarea id="fib" cols="8" rows="2"></textarea>
+        <textarea id="palin" cols="8" rows="2"></textarea>
+        <textarea id="primes" cols="8" rows="2"></textarea>
+    </center>
+</body>
+
+</html>
